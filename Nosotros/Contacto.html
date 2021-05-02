@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Fisioterapia Teixugueiras-Contacto</title>
+		<style>
+			header{
+				position: relative;
+				top: 0;
+				left:0;
+			}
+
+			
+			nav{
+  				font-family: sans-serif;
+ 				width: 800px;
+  				margin: 0 auto;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left:25%;
+			}
+
+			ul{
+  				list-style: none;
+			}
+	
+			#menu li>a{
+ 				background-color: #00BFFF;
+  				color: black;
+  				padding: 10px;
+  				display: block;
+  				text-decoration: none;
+  				min-width: 100px;
+			}
+
+			#menu li>a:hover{
+  				color: black;
+  				background-color: #eaeaea;
+			}
+
+			#menu>li{
+  				float: left;
+  				text-align:center
+			}
+
+			#menu>li>ul{
+ 			 display: none;
+
+			}
+			#menu>li:hover>ul {
+  				display:block;
+			}
+
+			h2{
+				color: #00BFFF;
+				font-family: "Times New Roman", Times, serif;
+				text-align: center;
+				margin-top:50px;
+				font-size: 40px;
+			}
+			
+			iframe {
+				width: 100%;
+			}
+
+			.columna {
+  				width:30%;
+  				float:left;
+				font-size: 20px;
+			}
+
+			@media (max-width: 500px) {
+  				.columna {
+    				width:auto;
+    				float:none;
+  				}
+  
+			}
+
+			textarea {
+  				width: 100%;
+  				height: 150px;
+  				box-sizing: border-box;
+  				border: 1px solid #000000;
+  				border-radius: 4px;
+  				background-color: #ffffff;
+  				resize: none;
+			}
+			footer{
+				background-color: #00BFFF;
+				margin-top: 550px;
+				font: sans-serif;
+				font-size: 15px;
+			}
+
+			div.relative {
+  				position: relative;
+  				width: 100%;
+  				height: 190px;
+				bottom:0;
+			} 
+
+			.direccion{
+				line-height: 8px;
+			}
+
+			div.absolute {
+  				position: absolute;
+				margin-top:40px;
+  				left: 10%;
+  				width: 400px;
+  				height: 50px;
+				color: black;
+				float:left;
+			}
+
+			div.absolute2 {
+  				position: absolute;
+				margin-top:10px;
+  				left: 40%;
+  				width: 400px;
+  				height: 50px;
+				color: black;
+				text-align:center;
+			}
+
+			div.absolute3 {
+  				position: absolute;
+				margin-top: 70px;
+  				left: 80%;
+  				width: 200px;
+  				height: 50px;
+			}
+			div.absolute3 a{
+				color: black;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="contenedor">
+			<header>
+				<img src= "..\Images\logo.jpg" widht="300" height="100">
+
+			</header>
+			<!-- Menú de navegación del sitio -->
+			<nav>
+			<div class="navegador">
+				<ul id="menu">
+					<li><a href="..\Inicio.html">Inicio</a></li>
+					<li><a href="..\Servicios.html">Servicios</a>
+						<ul>
+							<li><a href="..\Servicios\Acupuntura.html">Acupuntura</a></li>
+							<li><a href="..\Servicios\Fisioterapia.html">Fisioterapia</a></li>
+							<li><a href="..\Servicios\Rehabilitacion.html">Rehabilitación</a></li>
+						</ul>
+					</li>
+					<li><a href="..\Galeria.html">Galería</a></li>
+					<li><a href="..\Tarifas.html">Tarifas</a></li>
+					<li><a href="..\Nosotros.html">Nosotros</a>
+						<ul>
+							<li><a href="Politica de privacidad.html">Política de privacidad</a></li>
+							<li><a href="Contacto.html"><strong>Contacto</strong></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			</nav>
+
+			<hr color="#00BFFF" size=3></hr>
+			
+			<h2><em>CONTACTO</em></h2>
+
+			<div class="mapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.218710388208!2d-8.710314484328443!3d42.23114025122545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f62633feaf8e3%3A0xc32722a8710fc2ae!2sR%C3%BAa%20de%20Urzaiz%2C%20124%2C%2036205%20Vigo%2C%20Pontevedra!5e0!3m2!1ses!2ses!4v1602584511156!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+
+			<!-- Cuerpo del sitio -->
+			
+			<div class="columna" style="margin-left:50px">
+				<h3>Pide tu cita</h3>
+				<form action="/action_page.php" target="_blank">
+     				<p><input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre"></p>
+					<p><input class="w3-input w3-border" type="text" placeholder="Apellidos" required name="Apellidos"></p>
+     				<p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+     				<p><input class="w3-input w3-border" type="text" placeholder="Teléfono" required name="Teléfono"></p>
+					<select id="country" name="country">
+      					<option value="acupuntura">Acupuntura</option>
+      					<option value="Fisioterapia">Fisioterapia</option>
+      					<option value="Rehabilitación">Rehabilitación</option>
+    				</select>
+
+					<p><input type="date"></p>
+					<p><input type="time" name="hora" min="9:00" max="20:00"></p>
+      				<p>
+        				<button class="w3-button w3-black" type="submit" onclick="alert('La cita se ha enviado con éxito. En unos segundos llegará su correo de confirmación ¡¡Gracias por confiar en nosotros!!');">
+          					<i class="fa fa-paper-plane"></i> Enviar Mensaje
+        				</button>
+      				</p>
+    			</form>
+  			</div>
+
+			<div class="columna">
+    			<p>En esta clínica queremos que todos nuestros clientes queden contentos tanto con la información que le ofrecemos, como con nuestros servicios. </p>
+
+				<p>A continuación se les mostrará nuestra dirección para que podáis acertar con nuestra clínica.</p>
+
+				<p> <img src= "https://www.flaticon.es/svg/static/icons/svg/633/633898.svg" widht="556" height="23">	
+				Calle Urzaiz 124 6B, 36205 Vigo, Pontevedra</p>
+
+				<p> <img src= "https://www.flaticon.es/svg/static/icons/svg/633/633544.svg" widht="556" height="23">
+				674680404<p>
+
+				<p> <img src= "https://www.flaticon.es/svg/static/icons/svg/95/95645.svg" widht="556" height="23">
+				clinicateixugueiras@gmail.com<p>
+
+				<p style="text-align:center;">Horario:<p>
+
+				<p>De Lunes a Viernes de 9h a 14h y de 16h a 20h.</p>
+
+				<p>Además esta página cuenta con un formulario para poder pedir su cita.</p>
+
+				<p style="text-align:center;"><strong>¡Le esperamos!</strong></p>
+  			</div>
+
+  			<div class="columna" style="margin-left: 70px;">
+    			<h3>Formulario de contacto</h3>
+				<form action="/action_page.php" target="_blank">
+     				<p><input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre"></p>
+					<p><input class="w3-input w3-border" type="text" placeholder="Apellidos" required name="Apellidos"></p>
+     				<p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+					<p><select id="country" name="country">
+      					<option value="Fisioterapia">Información sobre tarifas</option>
+      					<option value="Rehabilitación">Información sobre tratamientos</option>
+						<option value="Rehabilitación">Otras cuestiones</option>
+    				</select></p>
+					<p><textarea>Escriba su mensaje</textarea></p>
+      				<p>
+        				<button class="w3-button w3-black" type="submit" onclick="alert('Su pregunta se ha enviado con éxito. Su respuesta le llegará a su correo en cuanto sea procesada.');">
+          					<i class="fa fa-paper-plane"></i> Enviar Mensaje
+        				</button>
+      				</p>
+    			</form>
+
+  			</div>
+
+			<!-- Pie del sitio -->
+			<footer>
+				<div class="relative">
+  					<div class="absolute">
+						<p><img src= "https://www.flaticon.es/svg/static/icons/svg/633/633898.svg" widht="200" height="17">	
+						C/Urzaiz, 124, 6ºB,36205 Vigo, Pontevedra</p>
+
+						<p> <img src= "https://www.flaticon.es/svg/static/icons/svg/633/633544.svg" widht="200" height="17">
+						674680404</p>
+
+						<p><img src= "https://www.flaticon.es/svg/static/icons/svg/95/95645.svg" widht="200" height="17">
+						clinicateixugueiras@gmail.com</p>
+
+					</div>
+
+					<div class="absolute2">
+						<p><strong>FISIOTERAPIA TEIXUGUEIRAS</strong></p>
+						
+						<p>Horario:</p>
+						<p>De Lunes a Viernes de 9h a 14h y de 16h a 20h.</p>
+
+						<p>Follow us</p>
+						<p>
+						<img src= "https://www.flaticon.es/svg/static/icons/svg/1384/1384047.svg" widht="200" height="17">
+						<img src= "https://www.flaticon.es/svg/static/icons/svg/733/733603.svg" widht="200" height="17">
+						<img src= "https://www.flaticon.es/svg/static/icons/svg/1051/1051331.svg" widht="200" height="17">
+						</p>
+					</div>
+
+					<div class="absolute3">
+						<p><a href="Contacto.html">@Contacto</a></p>
+						<p><a href="Politica de privacidad.html">@Política de privacidad</a></p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
